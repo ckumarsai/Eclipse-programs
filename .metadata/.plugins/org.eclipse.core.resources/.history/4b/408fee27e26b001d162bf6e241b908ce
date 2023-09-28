@@ -1,0 +1,22 @@
+package com.innominds.practice;
+
+public class PalindromeNumber {
+
+	public static void main(String[] args) {
+		int remainder, sum=0,temp=0,number=686;
+		temp=number;
+		while(number>0) {
+			remainder=number%10;
+			sum=(sum*10)+remainder;
+			number=number/10;
+		}
+		if(temp==sum) {
+			System.out.println("Palindrome");
+		}else {
+			System.out.println("not Palindrome");
+		}
+		
+
+	}
+
+}

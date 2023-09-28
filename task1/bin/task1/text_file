@@ -1,0 +1,9 @@
+The process of acquiring properties (variables) & methods (behaviors) from one class to another 
+class is called inheritance. 
+2. We are achieving inheritance concept by using extends keyword. Inheritance is also known as is- 
+a relationship. 
+3. Extends keyword is providing relationship between two classes.. 
+4. The main objective of inheritance is code extensibility whenever we are extending the class 
+automatically code is reused. 
+5. In inheritance one class providing properties & another class is acquiring the properties. 
+6. In inheritance parent class is giving properties & Child is acquiring properties from Parent.

@@ -1,0 +1,22 @@
+
+public class AreaandPerimeter {
+	
+	double r=7.5;
+	public double areaOfCircle() {
+		double res=3.14*r*r;
+		return res;
+	}
+	
+	public double perimeterOfCircle() {
+		double res=2*3.14*r;
+		return  res;
+	}
+
+	public static void main(String[] args) {
+		AreaandPerimeter ap=new AreaandPerimeter();
+		System.out.println(ap.areaOfCircle());
+		System.out.println(ap.perimeterOfCircle());
+
+	}
+
+}

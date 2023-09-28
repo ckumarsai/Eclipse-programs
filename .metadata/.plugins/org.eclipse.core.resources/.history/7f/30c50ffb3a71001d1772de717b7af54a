@@ -1,0 +1,25 @@
+package com.innominds.practice;
+
+import java.util.Arrays;
+
+public class CommonPrefix {
+
+	public static void main(String[] args) {
+		String word="flow flight flop";
+		String[] splitwords=word.split(" ");
+		System.out.println(Arrays.toString(splitwords));
+		
+		int  size=splitwords.length;
+		if(size==0) {
+			System.out.println("The input size is:" + size);
+		}else if(size ==1) {
+			System.out.println("The input size is:" + splitwords[0]);
+
+		}
+		else {
+			int length=splitwords[0].length();
+		}
+
+	}
+
+}

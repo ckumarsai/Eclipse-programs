@@ -1,0 +1,16 @@
+package countrysearch;
+
+import java.util.Comparator;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		Comparator<Employee> nameComparator=Comparator.comparing(Employee::getname);
+		Comparator<Employee> countryComparator=Comparator.comparing(Employee::getcountry);
+		
+		Employee e=new Employee("Sai",1,"india");
+		
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.innominds.practice;
+
+public class FirstandLastElement {
+
+	public static void main(String[] args) {
+	}
+	public static void firstLastElement(int arr[], int x) {
+		int n=arr.length;
+		int first=-1, last=-1;
+		for(int i=0;i<n;i++) {
+			
+		}
+	}
+
+}

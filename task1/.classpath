@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/fontbox-1.5.0.jar/fontbox-1.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/org-apache-commons-logging.jar/org-apache-commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/jar_files (3)/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/pdfbox-1.2.0.jar/pdfbox-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/pdfbox-app-3.0.0-alpha3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/tika-app-2.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/poi-ooxml-3.11-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/poi-ooxml-schemas-3.11-beta2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/schinthakunta/Downloads/jar_files (2)/stax-api-1.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

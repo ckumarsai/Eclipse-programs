@@ -1,0 +1,11 @@
+
+public class FindAlpabets {
+
+	public static void main(String[] args) {
+		String str="qwerty34zxcv76!}{name";
+		int len=str.length();
+		String  n=str.l
+
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class PalindromeString {
+
+	public static void main(String[] args) {
+		String str="heleh";
+		char []ch=str.toCharArray();
+		char []ch1 = new char[ch.length];
+		for(int i=ch.length-1;i>=0;i--) {
+			ch1[i]=ch[i];
+			System.out.print(ch1[i]+"\n");
+		}
+		String str1 = String.copyValueOf(ch1);
+		if(str.equals(str1)) {
+			System.out.println("string is palindome");
+		}else {
+			System.out.println("not a palindrome");
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.code.practice;
+
+public class Mean {
+
+	public static void main(String[] args) {
+		int[] arry= {1,8,6,10};
+		int sum=0;
+		for(int i=0;i<arry.length;i++) {
+			sum=sum+arry[i];
+		}
+		System.out.println(sum);
+		double mean=sum/arry.length;
+		System.out.println("The mean is:" +mean);
+	}
+
+}

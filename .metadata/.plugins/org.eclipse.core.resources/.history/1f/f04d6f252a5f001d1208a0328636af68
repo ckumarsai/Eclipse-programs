@@ -1,0 +1,66 @@
+package countstring;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.Scanner;
+
+import org.apache.pdfbox.pdmodel.PDDocument;
+
+import org.apache.pdfbox.util.PDFTextStripper;
+
+public class Extractors {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Map<String, Integer> frequencies = new TreeMap<String, Integer>();
+		PDDocument pd;
+		File input = new File("C:\\Users\\schinthakunta\\Downloads\\sample.pdf");
+		Scanner in = new Scanner(input);
+		try {
+			pd = PDDocument.load(input);
+			PDFTextStripper stripper = new PDFTextStripper();
+			stripper.setEndPage(20);
+			String text = stripper.getText(pd);
+
+			while (in.hasNext()) {
+				String word = clean(in.next());
+
+				if (word != "") {
+					Integer count = frequencies.get(word);
+
+					if (count == null) {
+						count = 1;
+					} else {
+						count = count + 1;
+					}
+
+					frequencies.put(word, count);
+				}
+			}
+
+			for (String key : frequencies.keySet()) {
+				System.out.println(key + ": " + frequencies.get(key));
+			}
+
+			if (pd != null) {
+				pd.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static String clean(String s) {
+		String r = "";
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (Character.isLetter(c)) {
+				r = r + c;
+			}
+		}
+		return r.toLowerCase();
+	}
+
+}

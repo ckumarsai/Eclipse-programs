@@ -1,0 +1,29 @@
+package com.code.practice;
+
+import java.util.Arrays;
+
+public class Median {
+
+	public static void main(String[] args) {
+		int[]arr1= {1,3,5,8};
+		int[] arr2= {2,4,6,7,9};
+		int[] merge=new int[9];
+		int count=0;
+		for(int i=0;i<arr1.length;i++) {
+			merge[i]=arr1[i];
+			System.out.println(merge[i]);
+			count++;
+		}
+		for(int j=0;j<arr2.length;j++) {
+			
+			merge[count++]=merge[j];
+		}
+		for(int k=0;k<merge.length;k++) {
+			System.out.println(merge);
+		}
+
+		
+
+	}
+
+}

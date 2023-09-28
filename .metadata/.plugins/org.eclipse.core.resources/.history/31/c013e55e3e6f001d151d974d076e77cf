@@ -1,0 +1,11 @@
+package com.innominds.practice;
+
+import java.util.HashSet;
+
+public class LongestConsecutiveNumbers {
+
+	public static void main(String[] args) {
+		
+	
+}	
+}
